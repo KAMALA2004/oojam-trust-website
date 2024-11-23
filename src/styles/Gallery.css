@@ -1,0 +1,140 @@
+/* Gallery-specific styles */
+
+/* Gallery Container */
+.gallery-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Header Nav Styles */
+.gallery-container header nav ul {
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  list-style: none;
+  margin-bottom: 20px;
+  padding: 0;
+  overflow-x: scroll; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping */
+  width: 100%; /* Ensure the container can stretch */
+  box-sizing: border-box; /* Include padding and border in the width */
+  scrollbar-width: none; /* Firefox */
+}
+
+.gallery-container header nav ul::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Webkit browsers */
+}
+
+.gallery-container header nav ul li {
+  margin: 0 10px;
+}
+
+.gallery-container header nav ul li a {
+  text-decoration: none;
+  color: #ffffff; /* Change text color to white for contrast */
+  font-weight: bold;
+  padding: 12px 20px; /* Increase padding for better spacing */
+  border: 2px solid #66c473; /* Add a green border */
+  border-radius: 10px; /* Make the border rounded */
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  display: inline-block;
+  background-color: #333333; /* Darker background for better contrast */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a soft shadow for depth */
+}
+
+.gallery-container header nav ul li a:hover {
+  background-color: #66c473; /* Green background on hover */
+  color: #ffffff; /* Keep text white on hover */
+  transform: scale(1.05); /* Slightly enlarge the link on hover */
+}
+
+.gallery-container header nav ul li a:active {
+  background-color: #2d4f2c; /* Darker green when the link is clicked */
+  color: white;
+  transform: scale(0.98); /* Shrink the link when clicked */
+}
+
+/* Icon Styles */
+.gallery-container header nav ul li a svg {
+  margin-right: 8px; /* Space between icon and text */
+  transition: color 0.3s ease; /* Smooth transition for icon color */
+}
+
+.gallery-container header nav ul li a:hover svg {
+  color: white; /* Change icon color to white on hover */
+}
+
+/* Main Content Styles */
+.gallery-container .main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery-container .card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-container .card:hover {
+  transform: scale(1.05);
+}
+
+.gallery-container .image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-container .gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Hover Overlay Effect */
+.gallery-container .image-container:hover .gallery-image {
+  opacity: 0.3;
+}
+
+.gallery-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.gallery-container .image-container:hover .overlay {
+  opacity: 1;
+}
+
+/* Learn More Button */
+.gallery-container .learn-more {
+  display: block;
+  text-decoration: none;
+  color: #66c473;
+  margin-top: 10px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.gallery-container .learn-more:hover {
+  color: #333;
+}

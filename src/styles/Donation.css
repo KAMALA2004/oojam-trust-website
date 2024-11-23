@@ -1,0 +1,197 @@
+/* Overall container for the donation page */
+.donation-page {
+  margin: 20px;
+}
+
+/* Container for the left and right columns (Causes and Recommended Causes) */
+.causes-container {
+  display: flex;
+  gap: 20px; /* Adds space between left and right sections */
+  margin-bottom: 20px; /* Adds space below the causes sections */
+}
+/* Center align the headings and add space below */
+.causes-title,
+.recommended-title {
+  text-align: center; /* Centers the text */
+  margin-bottom: 20px; /* Adds space below the heading */
+}
+
+/* Causes Details Section (Left Column) */
+.causes-section {
+  background-color: #D3D3D3; /* Light Grey for Causes Box */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  flex: 1; /* Take up equal space in the flex container */
+  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.causes-section:hover {
+  transform: scale(1.02); /* Slight zoom effect on hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.causes-section.alt-color {
+  background: #C0C0C0; /* Slightly darker grey for contrast */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.causes-section.alt-color:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Cause Card */
+.cause-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.cause-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cause-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cause-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #8B4513; /* Dark Brown for title */
+}
+
+.cause-price {
+  font-size: 18px;
+  color: #9E7B4F; /* Muted Mustard for price */
+}
+
+.cause-image-gallery {
+  display: flex;
+  justify-content: center; /* Centers images horizontally */
+  gap: 10px;
+}
+
+.cause-image-gallery img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cause-description {
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.5;
+  margin-top: 15px;
+}
+
+/* Recommended Causes Section (Right Column) */
+.recommended-causes {
+  background-color: #D3D3D3; /* Light Grey for Recommended Causes Box */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1; /* Take up equal space in the flex container */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.recommended-causes:hover {
+  transform: scale(1.02); /* Slight zoom effect on hover */
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Recommended Cause Card */
+.recommended-cause-card {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  background-color: #ffffff; /* White for each Recommended Cause Card */
+  padding: 10px;
+  border-radius: 8px;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.recommended-cause-card:hover {
+  transform: scale(1.03); /* Slight zoom effect */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow effect on hover */
+  background-color: hsl(40, 100%, 91%); /* Hover color effect */
+}
+
+.recommended-cause-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.recommended-cause-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.recommended-cause-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #8B4513; /* Dark Brown for the cause title */
+}
+
+.recommended-cause-price {
+  font-size: 14px;
+  color: #000000; /* Muted Mustard color for the cause price */
+}
+
+/* Donate Button */
+.donate-button {
+  background-color: #66c473; /* Green button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: auto; /* Moves the button to the right */
+}
+
+.donate-button:hover {
+  background-color: #9E7B4F; /* Muted Mustard on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .causes-container {
+    flex-direction: column; /* Stack causes sections on small screens */
+  }
+
+  /* Make the cause cards smaller on mobile */
+  .cause-card {
+    padding: 15px;
+  }
+
+  .cause-image {
+    height: 180px;
+  }
+
+  .recommended-cause-card {
+    flex-direction: column; /* Stack images and text on small screens */
+  }
+
+  .recommended-cause-image {
+    width: 80px;
+    height: 80px;
+  }
+}
