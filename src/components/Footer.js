@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import logo from './logo.png'; // Ensure logo is in the same directory or adjust the path
-
+import { Link } from 'react-router-dom';
 const Footer = () => {
   const [linkHovered, setLinkHovered] = useState(false);
   const [donateHovered, setDonateHovered] = useState(false);
@@ -82,14 +82,18 @@ const Footer = () => {
         {/* Donate Button */}
         <div style={styles.donateSection}>
           <p style={styles.donateText}>Raise Money and Help Them</p>
-          <a
-            href="#donate"
-            style={{...styles.donateButton, ...(donateHovered && styles.donateButtonHover)}}
-            onMouseEnter={() => setDonateHovered(true)}
-            onMouseLeave={() => setDonateHovered(false)}
-          >
-            Donate Now
-          </a>
+          <Link
+  to="/donation" // Specify the route path
+  style={{
+    ...styles.donateButton,
+    ...(donateHovered && styles.donateButtonHover),
+  }}
+  onMouseEnter={() => setDonateHovered(true)}
+  onMouseLeave={() => setDonateHovered(false)}
+>
+  Donate Now
+</Link>
+
         </div>
       </div>
     </footer>

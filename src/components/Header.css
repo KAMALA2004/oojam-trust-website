@@ -84,17 +84,20 @@ body {
 }
 
 /* Sidebar Menu */
+/* Sidebar Menu with Overlay Effect */
 .sidebar {
   position: fixed;
   top: 0;
   left: -250px; /* Initially hidden off-screen */
   width: 250px;
   height: 100%;
-  background-color: #F9A602;
+  background-color: rgba(0, 0, 0, 0.8); /* Overlay effect using semi-transparent black */
   transition: left 0.3s ease;
   z-index: 1000;
-  padding-top: 60px;  /* Space for header */
+  padding-top: 60px; /* Space for header */
+  backdrop-filter: blur(5px); /* Adds a subtle blur effect */
 }
+
 
 .sidebar.open {
   left: 0; /* Show the sidebar when open */
