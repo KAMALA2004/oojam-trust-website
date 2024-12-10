@@ -7,10 +7,9 @@
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgb(255, 255, 255);
+  margin-top: 70px; /* Adjust this to fine-tune the space */
   margin-bottom: 40px;
-  margin-top: 40px;
 }
-
 .sliding-banner-image {
   position: relative;
   width: 100%;
