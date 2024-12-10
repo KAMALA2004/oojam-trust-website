@@ -10,7 +10,7 @@ import Gallery from './pages/Gallery';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/oojam-trust-website">
       <Header />
       <main>
         <Routes>
