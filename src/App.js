@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -10,7 +10,7 @@ import Gallery from './pages/Gallery';
 
 const App = () => {
   return (
-    <Router basename="/oojam-trust-website">
+    <Router>
       <Header />
       <main>
         <Routes>
