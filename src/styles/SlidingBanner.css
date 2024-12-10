@@ -1,0 +1,77 @@
+/* Sliding Banner Styles */
+
+.sliding-banner {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgb(255, 255, 255);
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.sliding-banner-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.sliding-banner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sliding-banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.sliding-banner-text {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: white !important; /* Ensure text color is white */
+}
+
+.sliding-banner-text p {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  color: white !important; /* Ensure text color is white */
+}
+
+.discover-btn {
+  padding: 12px 28px;
+  background-color: #45a049;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.discover-btn:hover {
+  background-color: #9F7651;
+  transform: scale(1.05);
+}
+
+.discover-btn:active {
+  transform: scale(0.98);
+}

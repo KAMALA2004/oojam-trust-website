@@ -1,0 +1,176 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header Styles */
+.header {
+  background-color: #F9A602;
+  padding: 40px 20px;
+  position: relative;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+}
+
+.header-title {
+  color: white;
+  font-family: 'Georgia', serif;
+  font-size: 30px;
+}
+
+/* Navigation Menu */
+.menu-icon {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-menu ul li {
+  margin: 0;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Georgia', serif;
+  font-size: 20px;
+  line-height: 1.5;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.nav-menu ul li a:hover {
+  color: #f4f4f4;
+  text-decoration: underline;
+}
+
+/* Sidebar Menu */
+/* Sidebar Menu with Overlay Effect */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Initially hidden off-screen */
+  width: 250px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Overlay effect using semi-transparent black */
+  transition: left 0.3s ease;
+  z-index: 1000;
+  padding-top: 60px; /* Space for header */
+  backdrop-filter: blur(5px); /* Adds a subtle blur effect */
+}
+
+
+.sidebar.open {
+  left: 0; /* Show the sidebar when open */
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.sidebar-title {
+  color: white;
+  font-family: 'Georgia', serif;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+}
+
+.sidebar-nav ul li {
+  margin: 20px 0;
+}
+
+.sidebar-nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.sidebar-nav ul li a:hover {
+  color: #f4f4f4;
+  text-decoration: underline;
+}
+
+/* Close button for sidebar */
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .header-content {
+    justify-content: space-between;
+  }
+}
+
+/* Large Screen Styles */
+@media screen and (min-width: 769px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+  }
+}

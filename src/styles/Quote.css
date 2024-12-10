@@ -1,0 +1,79 @@
+
+  .quote-container {
+    background: url('https://www.shutterstock.com/image-photo/charity-close-diverse-people-holding-260nw-1154653396.jpg') repeat;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 300px;
+  }
+  
+  .quote-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.6); /* Semi-transparent overlay to enhance readability */
+    z-index: -1;
+  }
+  
+  
+  
+  .quote {
+    background-color: #ffffff; /* White background for the quote container */
+    padding: 40px 30px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .quote h2 {
+    font-family: 'Georgia', serif; /* Elegant serif font for the quote */
+    font-size: 36px;
+    color: #003366; /* Dark blue color for text */
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
+  
+  .attribution {
+    font-family: 'Arial', sans-serif; /* Sans-serif font for the attribution */
+    font-size: 18px;
+    color: #555555; /* Subtle gray color */
+    margin-bottom: 30px;
+    font-style: italic;
+  }
+  
+  .donate-button {
+    background-color: #ff8c00; /* Vibrant orange for the button */
+    color: white;
+    font-size: 18px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 25px; /* Rounded corners for the button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 200px;
+    margin-top: 20px;
+  }
+  
+  .donate-button:hover {
+    background-color: #dfdfdf; /* Darker orange on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .quote h2 {
+      font-size: 28px; /* Adjust font size on smaller screens */
+    }
+  
+    .donate-button {
+      width: 100%;
+      background-color: blue;
+      /* Make button full-width on mobile devices */
+    }
+  }
+  

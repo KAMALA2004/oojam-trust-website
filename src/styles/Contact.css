@@ -1,0 +1,160 @@
+.contact-container {
+  font-family: 'Roboto', sans-serif; /* Modern, sans-serif font for readability */
+  padding: 20px;
+  line-height: 1.8;
+  background-color: #fff; /* White background for the entire body */
+  color: #000000; /* Default body text color */
+}
+
+/* Header Section */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5em; /* Larger size for main heading */
+  color: #000000; /* Deep chocolate color */
+  font-weight: bold;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #ff0000; /* Softer gray for subheading */
+  margin-top: 10px;
+}
+
+header nav {
+  margin-top: 20px;
+  font-size: 1em;
+}
+
+header nav a {
+  color: #f9a602; /* Warm orange for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Information Section */
+.contact-info {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.contact-info h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #8b4513; /* Consistent chocolate color for headings */
+}
+
+.contact-details-box {
+  background-color: #fdf7f0; /* Soft light beige for the contact box */
+  border: 2px solid #f9a602; /* Soft orange border */
+  padding: 25px;
+  margin: 0 auto;
+  display: inline-block;
+  border-radius: 12px; /* More rounded corners */
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-details-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-details-box p {
+  font-size: 1.1em;
+  margin: 15px 0;
+  color: #333;
+}
+
+.contact-details-box a {
+  color: #f9a602;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-details-box a:hover {
+  text-decoration: underline;
+}
+
+/* Icons for Contact Details */
+.contact-details-box p:before {
+  content: '•'; /* Replace this with icons if needed */
+  margin-right: 10px;
+  color: #f9a602;
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
+/* Visit Us Section */
+.visit-us {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.visit-us h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #8b4513;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the map */
+  border: 2px solid #f9a602; /* Border to blend with the design */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Buttons and Accessibility */
+button {
+  background-color: #f9a602;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #e89b00; /* Darker orange on hover */
+  transform: scale(1.05);
+}
+
+button:focus {
+  outline: 3px solid #f9a602;
+  outline-offset: 2px;
+}
+
+/* Typography Adjustments */
+h1, h2 {
+  font-family: 'Merriweather', serif; /* Contrasting font for headings */
+}
+
+p, a {
+  font-family: 'Roboto', sans-serif; /* Keep body text readable */
+}
+
+/* Accessibility Enhancements */
+.contact-container {
+  font-size: 16px; /* Default font size for readability */
+}
+
+.contact-container a {
+  text-decoration: none;
+}
+
+.contact-container a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,114 @@
+/* Causes.css */
+
+/* Base Styles */
+.causes-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.causes-header {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.causes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.cause-card {
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cause-image {
+  width: 100%;
+  height: auto;
+}
+
+.cause-details {
+  padding: 15px;
+}
+
+.cause-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color:black;
+}
+
+.cause-price {
+  color: #007BFF;
+  margin: 10px 0;
+}
+
+.cause-description {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Unique overlay styling */
+.donate-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark transparent overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden; /* Hidden by default */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.cause-card:hover .donate-overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Unique donate button styling */
+.donate-now-button {
+  background-color: #28a745;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px; /* More rounded corners for uniqueness */
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-transform: uppercase; /* To make the button text all uppercase */
+  transition: background-color 0.3s, transform 0.3s; /* Added transform for scale effect */
+}
+
+.donate-now-button a {
+  text-decoration: none;
+  color: white;
+}
+
+.donate-now-button:hover {
+  background-color: #218838;
+  transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
+/* Unique styling for WhatsApp icon */
+.whatsapp-icon-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.whatsapp-icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .causes-grid {
+      grid-template-columns: 1fr; /* Stack the cards vertically */
+  }
+}
