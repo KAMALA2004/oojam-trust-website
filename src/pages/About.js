@@ -12,7 +12,7 @@ function About() {
         {["about-video1.mp4", "about-video2.mp4", "about-video3.mp4"].map((video, index) => (
           <div key={index} className="video-item">
             <video className="about-video" autoPlay loop muted>
-              <source src={`/assets/${video}`} type="video/mp4" />
+              <source src={`${process.env.PUBLIC_URL}/assets/${video}`} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <div className="video-overlay">
@@ -24,7 +24,6 @@ function About() {
 
       {/* Content Section */}
       <div className="content-container">
-        
         <p className="description">
           We believe that we can save lives. Donate to the poor and deserving people in need.
           Oojam Trust is the largest global charity and crowdfunding community in the world.
