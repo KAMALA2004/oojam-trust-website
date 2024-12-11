@@ -10,7 +10,7 @@ function About() {
       <div className="video-container">
         {/* Video Items */}
         {["about-video1.mp4", "about-video2.mp4", "about-video3.mp4"].map((video, index) => (
-          <div key={index} className="video-item">
+          <div key={index} className={`video-item ${index === 2 ? 'third-video' : ''}`}>
             <video className="about-video" autoPlay loop muted>
               <source src={`${process.env.PUBLIC_URL}/assets/${video}`} type="video/mp4" />
               Your browser does not support the video tag.

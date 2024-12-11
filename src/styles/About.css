@@ -60,9 +60,25 @@
   .video-container {
     gap: 10px; /* Reduce gap for smaller screens */
   }
-
+  .video-container .video-item:nth-child(3) {
+    flex: 1 1 300px; /* Same flexible width */
+    max-width: 300px; /* Same maximum width */
+  }
   .video-item {
     max-width: 100%; /* Allow videos to take full width */
+  }
+  .stats-container {
+    justify-content: center; /* Center the stat cards horizontally */
+    align-items: center;    /* Center the cards vertically if needed */
+    display: flex;          /* Change grid to flex for better alignment */
+    flex-wrap: wrap;        /* Allow wrapping of the cards */
+    gap: 20px;              /* Maintain spacing between cards */
+  }
+
+  .stat-card {
+    margin: 0 auto;         /* Center individual cards */
+    width: 100%;            /* Make cards full-width */
+    max-width: 300px;       /* Limit the maximum width */
   }
 }
 
