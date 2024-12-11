@@ -26,6 +26,11 @@ const Header = () => {
         };
     }, [isMenuOpen]);
 
+    // Function to close the sidebar when a link is clicked
+    const handleLinkClick = () => {
+        setIsMenuOpen(false);
+    };
+
     return (
         <header className="header">
             <div className="header-content">
@@ -59,11 +64,11 @@ const Header = () => {
                     <h2 className="sidebar-title">Oojam Trust</h2>
                     <nav className="sidebar-nav">
                         <ul>
-                            <li><Link to="/">Home</Link></li>
-                            <li><Link to="/about">About Us</Link></li>
-                            <li><Link to="/gallery">Gallery</Link></li>
-                            <li><Link to="/contact">Contact Us</Link></li>
-                            <li><Link to="/donation">Donate</Link></li>
+                            <li><Link to="/" onClick={handleLinkClick}>Home</Link></li>
+                            <li><Link to="/about" onClick={handleLinkClick}>About Us</Link></li>
+                            <li><Link to="/gallery" onClick={handleLinkClick}>Gallery</Link></li>
+                            <li><Link to="/contact" onClick={handleLinkClick}>Contact Us</Link></li>
+                            <li><Link to="/donation" onClick={handleLinkClick}>Donate</Link></li>
                         </ul>
                     </nav>
                 </div>
