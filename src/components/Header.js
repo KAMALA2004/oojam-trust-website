@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import logo from './logo.png';
@@ -10,6 +10,21 @@ const Header = () => {
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
+
+    // Function to handle clicks outside the sidebar
+    const handleClickOutside = (event) => {
+        if (isMenuOpen && !event.target.closest('.sidebar') && !event.target.closest('.menu-icon')) {
+            setIsMenuOpen(false);
+        }
+    };
+
+    // Add event listener when the component mounts and clean it up when it unmounts
+    useEffect(() => {
+        document.addEventListener('click', handleClickOutside);
+        return () => {
+            document.removeEventListener('click', handleClickOutside);
+        };
+    }, [isMenuOpen]);
 
     return (
         <header className="header">
