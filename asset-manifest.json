@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/oojam-trust-website/static/css/main.30a2f4e7.css",
-    "main.js": "/oojam-trust-website/static/js/main.706a6cec.js",
+    "main.css": "/oojam-trust-website/static/css/main.2000184e.css",
+    "main.js": "/oojam-trust-website/static/js/main.a6b2a0f8.js",
     "static/js/453.05f7c87e.chunk.js": "/oojam-trust-website/static/js/453.05f7c87e.chunk.js",
     "static/media/logo.png": "/oojam-trust-website/static/media/logo.2c216bc9409d511a92a1.png",
     "index.html": "/oojam-trust-website/index.html",
-    "main.30a2f4e7.css.map": "/oojam-trust-website/static/css/main.30a2f4e7.css.map",
-    "main.706a6cec.js.map": "/oojam-trust-website/static/js/main.706a6cec.js.map",
+    "main.2000184e.css.map": "/oojam-trust-website/static/css/main.2000184e.css.map",
+    "main.a6b2a0f8.js.map": "/oojam-trust-website/static/js/main.a6b2a0f8.js.map",
     "453.05f7c87e.chunk.js.map": "/oojam-trust-website/static/js/453.05f7c87e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.30a2f4e7.css",
-    "static/js/main.706a6cec.js"
+    "static/css/main.2000184e.css",
+    "static/js/main.a6b2a0f8.js"
   ]
 }
